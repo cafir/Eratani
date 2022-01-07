@@ -1,0 +1,87 @@
+*, *::before, *::after {
+    font-family: "Open Sans", sans-serif;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5rem;
+    align-items: flex-start;
+}
+
+.card-row {
+    display: grid;
+    max-width: 800px;
+    row-gap: 1rem;
+    align-items: flex-start;
+    width: 100%;
+    margin: auto;
+}
+
+.card {
+    --padding: 1rem;
+    background: white;
+    border: 1px solid #777;
+    border-radius: .25rem;
+    overflow: hidden;
+}
+
+.card.card-form{
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+    width: 75%;
+    margin: auto;
+}
+
+.input-group {
+    font-size: 1.5rem;
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+}
+
+.card.card-shadow {
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.card-header {
+    font-size: 1.5rem;
+    padding: var(--padding);
+    padding-bottom: 0;
+    margin-bottom: .5rem;
+}
+
+.shade {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-body {
+    font-size: .9rem;
+    padding: 0 var(--padding);
+}
+
+.card-footer {
+    margin-top: 1rem;
+    padding: var(--padding);
+    padding-top: 0;
+}
+
+.btn {
+    --color: hsl(200, 50%, 50%);
+    background: var(--color);
+    border: none;
+    color: white;
+    padding: .5em .75em;
+    border-radius: .25em;
+    cursor: pointer;
+}
+
+.btn:hover, .btn:focus {
+    background: hsl(200, 50%, 60% );
+}
